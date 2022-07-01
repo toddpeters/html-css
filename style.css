@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(90deg, #171941 21.75px, transparent 10%) center, linear-gradient(#171941 21.75px, transparent 10%) center, #a799cc;
+    background-size: 22px 22px;
+    font-family: "Trebuchet MS", Tahoma, "Helvetica Narrow", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    color: #FFFFFF;
+  }
+
+  .container {
+    --w: 400px;
+    --n: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(var(--n) + 1) + 0.1%, (var(--w) - 100vw)*1000, 100%), 1fr));
+    gap: 10px;
+  }
+
+  @keyframes shimmy {
+    0% {
+      transform: translate(200px, 200px);
+    }
+
+    100% {
+      transform: translate(160px, 200px);
+    }
+  }
+
+  #square1 {
+    border-radius: 60px 60px 60px 60px;
+    background: #e14eca;
+    position: relative;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+    opacity: 0.3;
+    bottom: 420px;
+    left: 50px;
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+  }
+
+  #square2 {
+    border-radius: 60px 60px 60px 60px;
+    background: #e14eca;
+    position: relative;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+    opacity: 0.6;
+    bottom: 400px;
+    left: 430px;
+    padding: 0px;
+    width: 400px;
+    height: 400px;
+  }
+
+  #square3 {
+    border-radius: 15px 15px 15px 15px;
+    background: #e14eca;
+    position: relative;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+    opacity: 0.3;
+    bottom: 400px;
+    left: 100px;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #square4 {
+    border-radius: 50px 50px 50px 50px;
+    background: #3c2361;
+    position: relative;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+    opacity: 0.3;
+    bottom: 600px;
+    left: 180px;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+  }
+
+  #square5 {
+    border-radius: 30px 30px 30px 30px;
+    background: #3c2361;
+    position: relative;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+    opacity: 0.3;
+    bottom: 600px;
+    left: 20px;
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+  }
+
+  #square6 {
+    border-radius: 15px 15px 15px 15px;
+    background: #e14eca;
+    position: relative;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+    opacity: 0.3;
+    bottom: 880px;
+    left: 400px;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #square7 {
+    border-radius: 30px 30px 30px 30px;
+    background: #3c2361;
+    position: relative;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+    opacity: 0.3;
+    bottom: 1000px;
+    left: 430px;
+    padding: 20px;
+    width: 260px;
+    height: 260px;
+  }
