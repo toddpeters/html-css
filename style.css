@@ -1,3 +1,5 @@
+
+
 body {
     background: linear-gradient(90deg, #171941 21.75px, transparent 10%) center, linear-gradient(#171941 21.75px, transparent 10%) center, #a799cc;
     background-size: 22px 22px;
@@ -5,6 +7,8 @@ body {
     font-size: small;
     font-weight: lighter;
     color: #FFFFFF;
+    margin: 0;
+
   }
   .container {
     --w: 400px;
@@ -138,13 +142,16 @@ body {
     padding: 20px;
     /* background: #fff; */
     opacity: 0.8;
+    top: 0;
+  width: 100%;
   }
   li {
     list-style: none;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: normal;
     margin-top: 0;
+    padding: 0px;
   }
   li a {
     text-decoration: none;
