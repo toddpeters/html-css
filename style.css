@@ -1,12 +1,11 @@
 body {
     background: linear-gradient(90deg, #171941 21.75px, transparent 10%) center, linear-gradient(#171941 21.75px, transparent 10%) center, #a799cc;
     background-size: 22px 22px;
-    font-family: "Trebuchet MS", Tahoma, "Helvetica Narrow", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: small;
     font-weight: lighter;
     color: #FFFFFF;
   }
-
   .container {
     --w: 400px;
     --n: 3;
@@ -14,7 +13,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(var(--n) + 1) + 0.1%, (var(--w) - 100vw)*1000, 100%), 1fr));
     gap: 10px;
   }
-
   @keyframes shimmy {
     0% {
       transform: translate(200px, 200px);
@@ -24,7 +22,6 @@ body {
       transform: translate(160px, 200px);
     }
   }
-
   #square1 {
     border-radius: 60px 60px 60px 60px;
     background: #e14eca;
@@ -38,7 +35,6 @@ body {
     width: 300px;
     height: 300px;
   }
-
   #square2 {
     border-radius: 60px 60px 60px 60px;
     background: #e14eca;
@@ -52,7 +48,6 @@ body {
     width: 400px;
     height: 400px;
   }
-
   #square3 {
     border-radius: 15px 15px 15px 15px;
     background: #e14eca;
@@ -66,7 +61,6 @@ body {
     width: 40px;
     height: 40px;
   }
-
   #square4 {
     border-radius: 50px 50px 50px 50px;
     background: #3c2361;
@@ -94,7 +88,6 @@ body {
     width: 180px;
     height: 180px;
   }
-
   #square6 {
     border-radius: 15px 15px 15px 15px;
     background: #e14eca;
@@ -108,7 +101,6 @@ body {
     width: 60px;
     height: 60px;
   }
-
   #square7 {
     border-radius: 30px 30px 30px 30px;
     background: #3c2361;
@@ -121,4 +113,48 @@ body {
     padding: 20px;
     width: 260px;
     height: 260px;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }  
+  /* body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  body nav {
+    position: sticky;
+    top: 0;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 20px;
+    /* background: #fff; */
+    opacity: 0.8;
+  }
+  li {
+    list-style: none;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 0;
+  }
+  li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  section {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    background: #eee;
   }
